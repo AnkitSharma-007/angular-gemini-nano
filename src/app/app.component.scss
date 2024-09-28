@@ -1,0 +1,30 @@
+.card-container{
+    width: 45%;
+    // margin: auto;
+    margin: 20px 0;
+}
+
+.blog-title{
+    width: 100%;    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.writerOptions{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+
+    mat-form-field{
+        margin: 0 10px;
+    }
+}
+
+.button-container{
+    button{
+        margin: 5px;
+    }
+}
