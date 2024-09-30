@@ -1,27 +1,28 @@
-# AiBlog
+# Angular Gemini Nano
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+**angular-gemini-nano** is a blog editing application powered by **Angular**, **Chrome's built-in AI (Gemini Nano)**, and **TinyMCE** for a rich text editing experience. This project combines AI-driven content generation and analysis with a user-friendly text editor, making blog writing more intuitive and efficient.
 
-## Development server
+### Key Features:
+- **Blog Creation**: Write and format new blog posts with ease using the TinyMCE editor.
+- **AI-Powered Title Generation**: Automatically generate catchy blog titles using Gemini Nano AI.
+- **Content Summarization**: Summarize long blog posts in seconds with the help of AI.
+- **Sentiment Analysis**: Analyze the emotional tone of your blog content.
+- **Readability Assessment**: Evaluate the readability score of your writing.
+- **Content Rewriting**: Rewrite blogs or specific sections for improved clarity or tone.
+- **Rich Text Editing**: Leverage **TinyMCE** for powerful text formatting and content editing.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Technologies:
+- **Angular**: Frontend framework used to build a responsive and dynamic UI.
+- **TinyMCE**: Rich text editor for seamless content creation and formatting.
+- **Gemini Nano (Chrome AI)**: AI engine for content generation and analysis.
 
-## Code scaffolding
+### Getting Started:
+1. Clone the repository:  
+   `git clone https://github.com/your-username/angular-gemini-nano.git`
+2. Install dependencies:  
+   `npm install`
+3. Run the application:  
+   `ng serve`
+4. Open the app in your browser:  
+   `http://localhost:4200`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
