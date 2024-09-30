@@ -16,6 +16,10 @@
 - **TinyMCE**: Rich text editor for seamless content creation and formatting.
 - **Gemini Nano (Chrome AI)**: AI engine for content generation and analysis.
 
+### Demo
+
+https://github.com/user-attachments/assets/a51a0e4a-d109-4e5c-a93f-45156f1226d0
+
 ### Getting Started:
 1. Clone the repository:  
    `git clone https://github.com/your-username/angular-gemini-nano.git`
