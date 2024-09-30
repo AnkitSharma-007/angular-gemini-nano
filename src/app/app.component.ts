@@ -14,6 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
+import { MarkdownPipe } from 'ngx-markdown';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +30,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    MarkdownPipe,
+    AsyncPipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -121,7 +125,7 @@ export class AppComponent {
     this.isLoading.set(true);
     const summarizer = await this.aiSummarizerAssistant?.create({
       type: 'teaser',
-      format: 'plain-text',
+      format: 'markdown',
       length: 'medium',
     });
     if (!summarizer) {
@@ -141,7 +145,7 @@ export class AppComponent {
     this.isLoading.set(true);
     const writer = await this.aiWriterAssistant?.create({
       tone: this.writerTone,
-      format: 'plain-text',
+      format: 'markdown',
       length: this.writerLength,
     });
     if (!writer) {
@@ -154,11 +158,10 @@ export class AppComponent {
   }
 
   async rewrite() {
-    console.log(this.reWriterTone);
     this.isLoading.set(true);
     const rewriter = await this.aiRewriterAssistant?.create({
       tone: this.reWriterTone,
-      format: 'plain-text',
+      format: 'markdown',
       length: this.reWriterLength,
     });
     if (!rewriter) {

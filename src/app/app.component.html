@@ -82,7 +82,7 @@
       @if (isLoading()) {
       <mat-spinner></mat-spinner>
       } @else{
-      <div [innerHTML]="outputText()"></div>
+      <div [innerHTML]="outputText() | markdown | async"></div>
       }
     </mat-card-content>
   </mat-card>
